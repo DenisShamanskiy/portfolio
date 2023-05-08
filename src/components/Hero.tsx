@@ -1,6 +1,6 @@
 import { Montserrat_Alternates } from "next/font/google";
 import Image from "next/image";
-import photo from "public/photo_1.jpg";
+import photo from "public/photo-hero.jpg";
 import Link from "next/link";
 
 const montserrat = Montserrat_Alternates({
