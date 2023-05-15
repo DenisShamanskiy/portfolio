@@ -8,23 +8,23 @@ const montserrat = Montserrat_Alternates({
 
 export default function Header() {
   return (
-    <header className="mx-auto flex h-16 w-11/12 min-w-[360px] max-w-5xl pt-8">
-      <div className="ml-auto flex gap-8 pr-6">
+    <header className="top-0 mx-auto flex w-full min-w-[360px] max-w-5xl px-4 pb-2 pt-8 lg:px-0">
+      <div className="ml-auto flex gap-8">
         <Link
           href="/"
-          className={`${montserrat.className} font-semibold before:content-['#']`}
+          className={`${montserrat.className} font-semibold before:text-orange-500 before:content-['#']`}
         >
           главная
         </Link>
         <Link
-          href="/"
-          className={`${montserrat.className} font-semibold before:content-['#']`}
+          href="/projects"
+          className={`${montserrat.className} font-semibold before:text-orange-500 before:content-['#']`}
         >
           проекты
         </Link>
         <Link
           href="/"
-          className={`${montserrat.className} font-semibold before:content-['#']`}
+          className={`${montserrat.className} font-semibold before:text-orange-500 before:content-['#']`}
         >
           о-себе
         </Link>

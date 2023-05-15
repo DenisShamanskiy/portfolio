@@ -16,14 +16,17 @@ const montserrat = Montserrat_Alternates({
 export default function Projects() {
   return (
     <section className="flex w-11/12 flex-wrap items-center justify-between">
-      <div className="mb-12 flex w-full flex-wrap items-center justify-between">
+      <div className="mb-12 flex w-full flex-col flex-wrap items-center sm:flex-row sm:justify-between">
         <h2
-          className={`${montserrat.className} after:content[""] relative inline-block text-3xl font-medium after:absolute after:-right-4 after:top-1/2 after:z-50 after:block after:h-[1px] after:w-[10vw] after:-translate-y-1/2 after:translate-x-full after:bg-third-color`}
+          className={`${montserrat.className} after:content[""] relative mr-auto flex text-3xl font-medium after:absolute after:-right-4 after:top-1/2 after:z-50 after:block after:h-[1px] after:w-[10vw] after:-translate-y-1/2 after:translate-x-full after:bg-third-color sm:inline-block`}
         >
           #проекты
         </h2>
-        <Link href={"/"} className="underline">
-          Просмотреть все
+        <Link
+          href={"/projects"}
+          className="ml-auto mt-8 flex border border-orange-500 px-4 py-2 text-right sm:mt-0 sm:inline-block"
+        >
+          {"Просмотреть все >>"}
         </Link>
       </div>
 
@@ -205,7 +208,7 @@ export default function Projects() {
             </div>
           </div>
         </div> */}
-        <div className="overflow-hidden rounded-xl border border-third-color">
+        <div className="xs overflow-hidden rounded-xl border border-third-color">
           <Image src={project_img_3} alt="Picture of the Movies" />
           <ul className="flex flex-wrap gap-x-2 gap-y-4 border-b border-third-color p-2">
             <li className="project__tech">HTML CSS</li>
