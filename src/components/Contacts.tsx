@@ -10,7 +10,7 @@ const montserrat = Montserrat_Alternates({
 
 export default function Contacts() {
   return (
-    <section className="w-11/12 ">
+    <section className="w-full">
       <h2
         className={`${montserrat.className} after:content[""] relative inline-block text-3xl font-medium after:absolute after:-right-4 after:top-1/2 after:z-50 after:block after:h-[1px] after:w-[10vw] after:-translate-y-1/2 after:translate-x-full after:bg-third-color`}
       >

@@ -10,7 +10,7 @@ const montserrat = Montserrat_Alternates({
 
 export default function Hero() {
   return (
-    <section className="grid w-11/12 grid-cols-1 items-center justify-between gap-4 xsPlus:grid-cols-2 sm:gap-8">
+    <section className="grid w-full max-w-4xl grid-cols-1 items-center justify-between gap-4 xsPlus:grid-cols-2 sm:gap-8">
       <>
         <h1
           className={`${montserrat.className} text-2xl font-semibold sm:text-3xl `}

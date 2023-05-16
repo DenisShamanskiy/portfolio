@@ -7,7 +7,7 @@ const montserrat = Montserrat_Alternates({
 
 export default function Skills() {
   return (
-    <section className="flex w-11/12 flex-wrap items-center justify-between gap-8">
+    <section className="flex w-full flex-wrap items-center justify-between gap-8">
       <h2
         className={`${montserrat.className} after:content[""] relative inline-block text-3xl font-medium after:absolute after:-right-4 after:top-1/2 after:z-50 after:block after:h-[1px] after:w-[10vw] after:-translate-y-1/2 after:translate-x-full after:bg-third-color`}
       >

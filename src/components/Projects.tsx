@@ -15,7 +15,7 @@ const montserrat = Montserrat_Alternates({
 
 export default function Projects() {
   return (
-    <section className="flex w-11/12 flex-wrap items-center justify-between">
+    <section className="flex w-full flex-wrap items-center justify-between">
       <div className="mb-12 flex w-full flex-col flex-wrap items-center sm:flex-row sm:justify-between">
         <h2
           className={`${montserrat.className} after:content[""] relative mr-auto flex text-3xl font-medium after:absolute after:-right-4 after:top-1/2 after:z-50 after:block after:h-[1px] after:w-[10vw] after:-translate-y-1/2 after:translate-x-full after:bg-third-color sm:inline-block`}
