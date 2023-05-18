@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        main: ["var(--font-noto-sans-mono)"],
+        heading: ["var(--font-montserrat-alternates)"],
+      },
       screens: {
         xs: "425px",
         xsPlus: "540px",
