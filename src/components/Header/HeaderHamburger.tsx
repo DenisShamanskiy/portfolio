@@ -6,12 +6,12 @@ type Props = {
 export default function HeaderHamburger({ setOpen, open }: Props) {
   return (
     <button
-      className="relative top-0 ml-auto block h-[50px] w-[50px] xsPlus:hidden"
+      className="relative my-auto mr-4 block h-[50px] w-[50px] xsPlus:hidden"
       onClick={() => setOpen(!open)}
     >
       <div
-        className={`relative flex h-[50px] w-[50px] transform items-center justify-center overflow-hidden rounded-full shadow-md ring-0 ring-gray-300 ring-opacity-30 transition-all duration-200 hover:ring-8 group-focus:ring-4 ${
-          open && "ring-4"
+        className={`relative flex h-[50px] w-[50px] transform items-center justify-center overflow-hidden rounded-full shadow-md ring-0 ring-gray-300 ring-opacity-30 transition-all duration-200 hover:ring-4 group-focus:ring-4 ${
+          open && "ring-2"
         }`}
       >
         <div className="flex h-[20px] w-[20px] origin-center transform flex-col justify-between overflow-hidden transition-all duration-300">
@@ -21,7 +21,7 @@ export default function HeaderHamburger({ setOpen, open }: Props) {
             }`}
           ></div>
           <div
-            className={`h-[2px] w-7 transform rounded bg-orange-500 transition-all delay-75 duration-300 ${
+            className={`h-[2px] w-7 transform bg-orange-500 transition-all delay-75 duration-300 ${
               open && "translate-x-10"
             }`}
           ></div>

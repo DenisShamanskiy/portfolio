@@ -1,28 +1,20 @@
-import { Montserrat_Alternates } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
 import telegram from "public/telegram.svg";
 import github from "public/github.svg";
 import linkedin from "public/linkedin.svg";
 
-const montserrat = Montserrat_Alternates({
-  subsets: ["cyrillic"],
-  weight: "600",
-});
-
 export default function Footer() {
   return (
-    <footer className="mx-auto mb-4 mt-28 w-full min-w-[360px] border-t border-first-color px-8 pt-8">
+    <footer className="mx-auto mb-4 mt-28 w-full min-w-[360px] border-t border-first-color px-8 pt-8 font-main">
       <div className="relative mx-auto max-w-5xl">
         <div className="mb-12 flex justify-between gap-8">
           <div className="footer__info">
-            <p className="mb-4">Денис Шаманский</p>
+            <p className="mb-4 font-heading uppercase">Денис Шаманский</p>
             <p>Фронтенд разработчик</p>
           </div>
           <div className="footer__media">
-            <div
-              className={`${montserrat.className} mb-4 text-2xl font-semibold`}
-            >
+            <div className="mb-4 font-heading text-2xl font-semibold">
               Медиа
             </div>
             <div className="flex gap-2">

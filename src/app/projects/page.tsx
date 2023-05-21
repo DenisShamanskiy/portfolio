@@ -1,4 +1,3 @@
-import { Montserrat_Alternates } from "next/font/google";
 import project_img_1 from "public/movies-explorer-frontend.png";
 import project_img_2 from "public/how-to-learn.png";
 import project_img_3 from "public/russian-travel.png";
@@ -9,25 +8,17 @@ import Project from "@/components/Project";
 import ProjectLink from "@/components/ProjectLink";
 import Heading2 from "@/components/Heading2";
 
-const montserrat = Montserrat_Alternates({
-  subsets: ["cyrillic"],
-  weight: ["700"],
-});
-
 export default function Page() {
   return (
     <>
       <div className="block w-full self-start">
-        <h1
-          className={`${montserrat.className} text-2xl font-medium before:text-orange-500 before:content-['/'] sm:text-3xl`}
-        >
+        <h1 className="font-heading text-2xl font-medium before:text-orange-500 before:content-['/'] sm:text-3xl">
           проекты
         </h1>
-        <p className="mt-4 text-sm sm:text-base">Мои проекты</p>
+        <p className="mt-4 font-main text-sm sm:text-base">Мои проекты</p>
       </div>
       <section className="mx-auto flex w-full flex-wrap items-center justify-between">
         <Heading2>учебные</Heading2>
-
         <ul className="mt-12 grid items-start gap-4 sm:grid-cols-2 mdPlus:grid-cols-3">
           <Project
             image={project_img_1}
@@ -47,7 +38,7 @@ export default function Page() {
           </Project>
           <Project
             image={project_img_6}
-            technologies="React, Express"
+            technologies="React Express"
             title="React Mesto Api Full"
             description="Для проекта Mesto написан backend"
           >

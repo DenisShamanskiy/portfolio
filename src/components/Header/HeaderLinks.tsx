@@ -1,36 +1,24 @@
-import Link from "next/link";
+import HeaderLink from "./HeaderLink";
 
 type Props = {
+  setOpen: (open: boolean) => void;
   open: boolean;
 };
 
-export default function HeaderLinks({ open }: Props) {
+export default function HeaderLinks({ setOpen, open }: Props) {
   return (
-    <div
+    <nav
       className={`${
         open
-          ? "visible translate-y-0 opacity-100 transition-all duration-1000"
-          : "invisible -translate-y-36 opacity-0"
-      } mr-auto flex flex-col gap-8 xsPlus:visible xsPlus:right-0 xsPlus:ml-auto xsPlus:mr-0 xsPlus:mt-0 xsPlus:translate-y-0 xsPlus:flex-row xsPlus:opacity-100`}
+          ? "visible translate-x-0 transition-all duration-500"
+          : "invisible -translate-x-full transition-all duration-500"
+      } absolute top-16 z-50 flex w-full rounded-b-xl border-t border-orange-500 bg-[#eeeeee] shadow-md xsPlus:visible xsPlus:static xsPlus:top-0 xsPlus:mr-4 xsPlus:w-auto xsPlus:translate-x-0 xsPlus:border-none xsPlus:shadow-none`}
     >
-      <Link
-        href="/"
-        className="font-heading font-semibold before:text-orange-500 before:content-['#']"
-      >
-        главная
-      </Link>
-      <Link
-        href="/projects"
-        className="font-heading font-semibold before:text-orange-500 before:content-['#']"
-      >
-        проекты
-      </Link>
-      <Link
-        href="/about-me"
-        className="font-heading font-semibold before:text-orange-500 before:content-['#']"
-      >
-        о-себе
-      </Link>
-    </div>
+      <ul className="m-4 flex w-full flex-col gap-4 xsPlus:m-0 xsPlus:flex-row xsPlus:gap-8">
+        <HeaderLink setOpen={setOpen} href="/" title="главная" />
+        <HeaderLink setOpen={setOpen} href="/projects" title="проекты" />
+        <HeaderLink setOpen={setOpen} href="/about-me" title="о-себе" />
+      </ul>
+    </nav>
   );
 }
