@@ -1,7 +1,6 @@
-import Image from "next/image";
-import project_img_1 from "public/movies-explorer-frontend.png";
-import project_img_3 from "public/russian-travel.png";
-import project_img_6 from "public/react-mesto-api-full.png";
+import project_img_1 from "public/wordle.png";
+import project_img_2 from "public/gpt-telegram-bot.png";
+import project_img_3 from "public/movies-explorer-frontend.png";
 import Link from "next/link";
 import Heading2 from "./Heading2";
 import Project from "./Project";
@@ -14,7 +13,7 @@ export default function Projects() {
         <Heading2>проекты</Heading2>
         <Link
           href={"/projects"}
-          className="ml-auto mt-8 flex border border-orange-500 px-4 py-2 text-right font-main transition-all hover:border-orange-200 hover:bg-orange-200 sm:mt-0 sm:inline-block"
+          className="ml-auto mt-8 flex border border-orange-500 px-4 py-2 text-right font-main transition-all duration-300 hover:bg-orange-200 sm:mt-0 sm:inline-block"
         >
           {"Просмотреть все >>"}
         </Link>
@@ -22,6 +21,31 @@ export default function Projects() {
       <ul className="grid items-start gap-4 sm:grid-cols-2 md:grid-cols-3">
         <Project
           image={project_img_1}
+          technologies="React Express"
+          title="Wordle"
+          description="Браузерная игра в слова"
+        >
+          <ProjectLink href="https://www.wordle-by-ds.ru/">Сайт</ProjectLink>
+          <ProjectLink href="https://github.com/DenisShamanskiy/react-demo-wordle">
+            Github frontend
+          </ProjectLink>
+          <ProjectLink href="https://github.com/DenisShamanskiy/react-demo-wordle-api">
+            Github backend
+          </ProjectLink>
+        </Project>
+        <Project
+          image={project_img_2}
+          technologies="Express"
+          title="GPT-TelegramBot"
+          description="Telegram бот для работы с ChatGPT"
+        >
+          <ProjectLink href="https://t.me/GPTbyDSBot">Telegram</ProjectLink>
+          <ProjectLink href="https://github.com/DenisShamanskiy/GPT-TelegramBot">
+            Github
+          </ProjectLink>
+        </Project>
+        <Project
+          image={project_img_3}
           technologies="React"
           title="Movies"
           description="Дипломная работа в Яндекс.Практикум"
@@ -33,35 +57,6 @@ export default function Projects() {
             Github backend
           </ProjectLink>
           <ProjectLink href="https://disk.yandex.ru/d/c-BipWYdCCPnFw">
-            Figma
-          </ProjectLink>
-        </Project>
-        <Project
-          image={project_img_6}
-          technologies="React Express"
-          title="React Mesto Api Full"
-          description="Для проекта Mesto написан backend"
-        >
-          <ProjectLink href="https://github.com/DenisShamanskiy/react-mesto-api-full">
-            Github frontend
-          </ProjectLink>
-          <ProjectLink href="https://github.com/DenisShamanskiy/express-mesto">
-            Github backend
-          </ProjectLink>
-        </Project>
-        <Project
-          image={project_img_3}
-          technologies="HTML CSS"
-          title="Russian Travel"
-          description="Адаптивная вёрстка сайта под различные разрешения экранов"
-        >
-          <ProjectLink href="https://github.com/DenisShamanskiy/russian-travel">
-            Github
-          </ProjectLink>
-          <ProjectLink href="https://denisshamanskiy.github.io/russian-travel/">
-            Github Pages
-          </ProjectLink>
-          <ProjectLink href="https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0">
             Figma
           </ProjectLink>
         </Project>

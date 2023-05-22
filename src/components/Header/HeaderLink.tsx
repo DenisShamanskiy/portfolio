@@ -13,7 +13,7 @@ export default function HeaderLink({ setOpen, href, title }: Props) {
       <Link
         href={href}
         onClick={() => setOpen(false)}
-        className="font-semibold transition-all before:text-orange-500 before:content-['#'] hover:text-orange-500"
+        className="font-semibold transition-all duration-300 before:text-orange-500 before:content-['#'] hover:text-orange-500"
       >
         {title}
       </Link>

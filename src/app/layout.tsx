@@ -20,6 +20,7 @@ const montserrat = Montserrat_Alternates({
 export const metadata = {
   title: "Денис Шаманский | Frontend Developer",
   description: "Портфолио",
+  themeColor: "#eeeeee",
   icons: {
     icon: "/icon.svg",
   },

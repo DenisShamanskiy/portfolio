@@ -10,7 +10,9 @@ export default function Footer() {
       <div className="relative mx-auto max-w-5xl">
         <div className="mb-12 flex justify-between gap-8">
           <div className="footer__info">
-            <p className="mb-4 font-heading uppercase">Денис Шаманский</p>
+            <p className="mb-4 font-heading text-2xl">
+              <span className="text-orange-500">Денис </span>Шаманский
+            </p>
             <p>Фронтенд разработчик</p>
           </div>
           <div className="footer__media">

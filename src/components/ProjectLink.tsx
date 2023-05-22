@@ -12,7 +12,7 @@ export default function ProjectLink({ href, children }: PropsProjectLink) {
     <Link
       href={href}
       target="_blank"
-      className="inline-block max-w-fit rounded-lg border border-orange-500 p-2 font-heading transition-all hover:bg-orange-200"
+      className="inline-block max-w-fit rounded-lg border border-orange-500 p-2 font-heading transition-all duration-300 hover:bg-orange-200"
     >
       {children}
     </Link>

@@ -4,6 +4,11 @@ import photo from "public/photo-3.jpg";
 import Heading2 from "@/components/Heading2";
 import Skill from "@/components/Skill";
 
+export const metadata = {
+  title: "О себе | Денис Шаманский",
+  themeColor: "#eeeeee",
+};
+
 export default function Page() {
   return (
     <>
@@ -81,6 +86,9 @@ export default function Page() {
             >
               «Память о прошлом Земли»
             </Link>
+          </li>
+          <li className="rounded-xl border border-third-color p-2">
+            Нейросети нас не погубят
           </li>
         </ul>
       </section>

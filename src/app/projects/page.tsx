@@ -4,9 +4,16 @@ import project_img_3 from "public/russian-travel.png";
 import project_img_4 from "public/mesto.png";
 import project_img_5 from "public/mesto_react.png";
 import project_img_6 from "public/react-mesto-api-full.png";
+import project_img_7 from "public/wordle.png";
+import project_img_8 from "public/gpt-telegram-bot.png";
 import Project from "@/components/Project";
 import ProjectLink from "@/components/ProjectLink";
 import Heading2 from "@/components/Heading2";
+
+export const metadata = {
+  title: "Проекты | Денис Шаманский",
+  themeColor: "#eeeeee",
+};
 
 export default function Page() {
   return (
@@ -17,9 +24,37 @@ export default function Page() {
         </h1>
         <p className="mt-4 font-main text-sm sm:text-base">Мои проекты</p>
       </div>
-      <section className="mx-auto flex w-full flex-wrap items-center justify-between">
+      <section className="mx-auto flex w-full flex-wrap items-center justify-between gap-12">
+        <Heading2>PET-проекты</Heading2>
+        <ul className="grid items-start gap-4 sm:grid-cols-2 mdPlus:grid-cols-3">
+          <Project
+            image={project_img_7}
+            technologies="React Express"
+            title="Wordle"
+            description="Браузерная игра в слова"
+          >
+            <ProjectLink href="https://www.wordle-by-ds.ru/">Сайт</ProjectLink>
+            <ProjectLink href="https://github.com/DenisShamanskiy/react-demo-wordle">
+              Github frontend
+            </ProjectLink>
+            <ProjectLink href="https://github.com/DenisShamanskiy/react-demo-wordle-api">
+              Github backend
+            </ProjectLink>
+          </Project>
+          <Project
+            image={project_img_8}
+            technologies="Express"
+            title="GPT-TelegramBot"
+            description="Telegram бот для работы с ChatGPT"
+          >
+            <ProjectLink href="https://t.me/GPTbyDSBot">Telegram</ProjectLink>
+            <ProjectLink href="https://github.com/DenisShamanskiy/GPT-TelegramBot">
+              Github
+            </ProjectLink>
+          </Project>
+        </ul>
         <Heading2>учебные</Heading2>
-        <ul className="mt-12 grid items-start gap-4 sm:grid-cols-2 mdPlus:grid-cols-3">
+        <ul className="grid items-start gap-4 sm:grid-cols-2 mdPlus:grid-cols-3">
           <Project
             image={project_img_1}
             technologies="React"

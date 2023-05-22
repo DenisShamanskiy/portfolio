@@ -24,7 +24,7 @@ export default function About() {
         </div>
         <Link
           href={"/about-me"}
-          className="ml-auto mt-8 flex border border-orange-500 px-4 py-2 text-right font-main transition-all hover:border-orange-200 hover:bg-orange-200 sm:mt-0 sm:inline-block"
+          className="ml-auto mt-8 flex border border-orange-500 px-4 py-2 text-right font-main transition-all duration-300 hover:bg-orange-200 sm:mt-0 sm:inline-block"
         >
           {"Просмотреть все >>"}
         </Link>
